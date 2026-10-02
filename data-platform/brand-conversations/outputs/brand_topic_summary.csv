@@ -1,0 +1,9 @@
+brand,topic_label,posts,brand_total,within_brand_share
+PayPal,emotional,27,79,0.34177215189873417
+PayPal,informational,52,79,0.6582278481012658
+UPS,emotional,31,54,0.5740740740740741
+UPS,informational,23,54,0.42592592592592593
+Walmart,emotional,22,73,0.3013698630136986
+Walmart,informational,51,73,0.6986301369863014
+amazon,emotional,39,118,0.3305084745762712
+amazon,informational,79,118,0.6694915254237288

@@ -1,0 +1,114 @@
+{
+  "project": "E-commerce churn risk: current reproducible reconstruction",
+  "source_file": "dataset of marketing management lab.xlsx",
+  "source_sheet": "Original dataset",
+  "records": 5630,
+  "features_used": [
+    "Tenure",
+    "PreferredLoginDevice",
+    "CityTier",
+    "WarehouseToHome",
+    "MaritalStatus",
+    "AgeGroup",
+    "Gender",
+    "HourSpendOnApp",
+    "OrderCount",
+    "OrderAmountHikeFromlastYear",
+    "DaySinceLastOrder",
+    "PreferedOrderCat",
+    "NumberOfStreamerFollowed",
+    "SatisfactionScore",
+    "Complain",
+    "CouponUsed",
+    "DiscountAmount"
+  ],
+  "features_excluded": [
+    "CustomerID",
+    "Churnclass",
+    "Pred:Churnclass",
+    "Pred:Conf.Churnclass"
+  ],
+  "duplicate_customer_ids": 0,
+  "missing_values_by_feature": {
+    "Tenure": 264,
+    "PreferredLoginDevice": 0,
+    "CityTier": 0,
+    "WarehouseToHome": 251,
+    "MaritalStatus": 0,
+    "AgeGroup": 0,
+    "Gender": 0,
+    "HourSpendOnApp": 255,
+    "OrderCount": 258,
+    "OrderAmountHikeFromlastYear": 265,
+    "DaySinceLastOrder": 307,
+    "PreferedOrderCat": 0,
+    "NumberOfStreamerFollowed": 0,
+    "SatisfactionScore": 0,
+    "Complain": 0,
+    "CouponUsed": 256,
+    "DiscountAmount": 0
+  },
+  "target_positive_rate": 0.16838365896980462,
+  "split": {
+    "method": "stratified holdout",
+    "test_fraction": 0.2,
+    "seed": 42,
+    "train_n": 4504,
+    "test_n": 1126,
+    "train_churn_rate": 0.16829484902309058,
+    "test_churn_rate": 0.16873889875666073
+  },
+  "preprocessing": {
+    "numeric_missing": "median fitted on training split",
+    "categorical_missing": "mode fitted on training split",
+    "categorical_encoding": "one-hot; unseen test categories map to all-zero columns",
+    "scaling": "mean/std fitted on training split"
+  },
+  "model": {
+    "name": "L2-regularized logistic regression",
+    "optimizer": "full-batch gradient descent",
+    "steps": 4000,
+    "learning_rate": 0.15,
+    "l2": 0.02,
+    "decision_threshold": 0.5
+  },
+  "metrics": {
+    "majority_baseline": {
+      "n": 1126,
+      "threshold": 0.5,
+      "accuracy": 0.8312611012433393,
+      "precision_churn": 0.0,
+      "recall_churn": 0.0,
+      "f1_churn": 0.0,
+      "roc_auc": 0.5,
+      "average_precision": 0.17750653382267123,
+      "confusion_matrix": {
+        "tn": 936,
+        "fp": 0,
+        "fn": 190,
+        "tp": 0
+      }
+    },
+    "logistic_regression": {
+      "n": 1126,
+      "threshold": 0.5,
+      "accuracy": 0.8880994671403197,
+      "precision_churn": 0.8333333333333334,
+      "recall_churn": 0.42105263157894735,
+      "f1_churn": 0.5594405594405594,
+      "roc_auc": 0.8866734143049932,
+      "average_precision": 0.7025239305226738,
+      "confusion_matrix": {
+        "tn": 920,
+        "fp": 16,
+        "fn": 110,
+        "tp": 80
+      }
+    }
+  },
+  "limitations": [
+    "Single stratified holdout; no repeated cross-validation or threshold tuning.",
+    "Results describe this dataset and split only; they do not establish business impact.",
+    "Feature coefficients are associations in this fitted model, not causal effects."
+  ]
+}
