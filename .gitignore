@@ -1,8 +1,0 @@
-**/data/
-**/*.xlsx
-**/*.xls
-**/heldout_predictions.csv
-.env
-.env.*
-__pycache__/
-*.py[cod]
