@@ -1,0 +1,34 @@
+{
+  "analysis": "Current reproducible descriptive analysis of Assignment 2 social posts",
+  "source": "Assignment2_Data_2025.xlsx",
+  "label_source": "tweets_with_topic_classification.csv",
+  "records": 324,
+  "id_field_unique_values": 6,
+  "record_match_key": "UTC created_at + exact full text",
+  "brands": {
+    "amazon": 118,
+    "PayPal": 79,
+    "Walmart": 73,
+    "UPS": 54
+  },
+  "date_range_utc": {
+    "start": "2022-12-15T05:00:01+00:00",
+    "end": "2023-04-10T19:00:27+00:00"
+  },
+  "topic_label_counts": {
+    "informational": 205,
+    "emotional": 119
+  },
+  "label_provenance": "Existing labels are treated as input; this script does not recreate the original labeling model or rubric.",
+  "outputs": [
+    "brand_topic_summary.csv",
+    "engagement_by_brand_and_topic.csv",
+    "monthly_topic_counts.csv"
+  ],
+  "limitations": [
+    "Small observational sample of 324 posts across four brand accounts.",
+    "Engagement reflects observed counts and is not normalized for exposure or account size.",
+    "Topic labels are imported and their original generation method is not established here.",
+    "Descriptive differences do not establish causal effects or represent all customers."
+  ]
+}
