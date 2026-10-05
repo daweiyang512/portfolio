@@ -1,13 +1,16 @@
 # Dawei Yang | Course Portfolio
 
-This repository presents two separate master's-course cases. Each course has its own case page and technical evidence.
+This repository presents a master's thesis case and two separate master's-course cases. Each case has its own page and evidence.
 
-| Course | Portfolio case | Public evidence |
+| Work | Portfolio case | Public evidence |
 | --- | --- | --- |
+| Master's Thesis · Marketing Management | Framing, time pressure, and sustainable consumption decisions | Five-page case brief, public thesis copy, selected original Python excerpts, aggregate model outputs. |
 | Data Marketing Management Lab | E-commerce churn risk | A stratified held-out evaluation, majority-class baseline, regularized logistic regression, and a visible precision/recall trade-off. |
 | Data Platform | Brand conversations and engagement | A 324-post record-link check and descriptive summaries by brand, topic, and month. |
 
-Open the [portfolio homepage](index.html), then choose a course. The site is static and can be read without GitHub knowledge. Code and aggregate outputs are optional technical evidence.
+Open the [portfolio homepage](index.html), then choose a case. The site is static and can be read without GitHub knowledge. Code and aggregate outputs are optional technical evidence.
+
+The thesis case reports 2,107 valid choice observations and 2,197 valid reaction-time observations from 101 participants. The raw participant-level survey export and row-level records are not included. The full thesis copy uses a public cover without the identifying student number or email.
 
 ## Data and scope
 
@@ -34,3 +37,5 @@ The scripts write aggregate outputs next to their code. The churn script does no
 ## Limits
 
 The churn result is one held-out split, not a production validation or proof of retention impact. The Data Platform analysis treats supplied topic labels as inputs and reports descriptive associations; it does not reproduce the original labeling model or establish causal effects.
+
+The thesis case distinguishes constructed trial rows from valid model observations. Its framing and time-pressure results are reported with uncertainty, and its entropy extension is exploratory. The source notebook's attention-check flag logic requires revalidation; attention-based robustness claims are not presented as validated evidence.

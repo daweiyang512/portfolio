@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dawei Yang's master's thesis case on sustainable consumption decisions, experimental design, behavioral data preparation, and statistical analysis.">
+  <title>Sustainable Consumption Experiment | Dawei Yang</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body><main class="wrap">
+  <nav class="nav"><a class="brand" href="../index.html">DAWEI YANG · PORTFOLIO</a><div class="navlinks"><a href="../data-marketing-management-lab/index.html">Data Marketing Lab</a><a href="../data-platform/index.html">Data Platform</a><a href="../index.html">All work</a></div></nav>
+  <header class="hero"><p class="eyebrow">Master’s thesis · Marketing Management · 2025–2026</p><h2>When does framing shape sustainable choice?</h2><p class="lead">An online randomized experiment testing gain/loss framing and instruction-based time pressure, with repeated consumer decisions and participant-level measures.</p></header>
+
+  <section class="grid">
+    <article class="card"><p class="eyebrow">Research design</p><h3>2 × 2 experiment</h3><p>Gain vs. loss framing crossed with an instruction-based time-pressure condition. Participants made repeated binary choices between sustainable and conventional products.</p></article>
+    <article class="card"><p class="eyebrow">Analysis data</p><h3>Repeated decisions</h3><p><strong>101</strong> participants · <strong>2,424</strong> reshaped trial rows · <strong>2,107</strong> valid choice observations · <strong>2,197</strong> valid reaction-time observations.</p></article>
+  </section>
+
+  <section class="section"><h2>Research question</h2><p>Does loss framing increase sustainable product choice? Does its effect change under time pressure or with participants’ prior environmental attitudes? An exploratory extension examines whether repeated-choice consistency marks a boundary condition.</p></section>
+
+  <section class="section"><h2>From survey export to analysis</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>Stage</th><th>Work</th><th>Evidence</th></tr></thead><tbody>
+    <tr><td>Design</td><td>Specify a 2 × 2 between-participant experiment with repeated choice trials.</td><td>Thesis methodology and survey-flow description.</td></tr>
+    <tr><td>Restructure</td><td>Transform the participant-wide export into trial-level records.</td><td>Original notebook excerpt and saved decision-level data profile.</td></tr>
+    <tr><td>Prepare</td><td>Construct choice and reaction-time variables, mark quality indicators, and attach participant-level attitude measures.</td><td>Notebook excerpts and aggregate sample overview.</td></tr>
+    <tr><td>Estimate</td><td>Fit logistic choice models and log reaction-time models with participant-clustered uncertainty.</td><td>Saved model tables and thesis results.</td></tr>
+    <tr><td>Interpret</td><td>Compare direction and uncertainty across the primary and exploratory models.</td><td>Five-page case brief and limitations below.</td></tr>
+  </tbody></table></div></section>
+
+  <section class="section"><h2>Results</h2><div class="grid">
+    <article class="card"><h3>Framing</h3><p>The estimated loss-framing effect is positive but imprecise: OR 1.56, 95% CI [0.82, 2.97], p = 0.177. This sample does not establish a reliable average framing effect.</p></article>
+    <article class="card"><h3>Environmental attitude</h3><p>In the model with gain framing as the reference condition, higher pre-task environmental attitude is associated with greater odds of sustainable choice (OR 3.51, 95% CI [2.14, 5.78], p &lt; 0.001). This is an adjusted association, not a randomized effect.</p></article>
+    <article class="card"><h3>Time pressure</h3><p>The instruction-based manipulation shows no clear reaction-time difference in the saved final model (log-RT coefficient 0.036, 95% CI [−0.175, 0.246], p = 0.738).</p></article>
+  </div></section>
+
+  <figure class="panel"><img src="assets/framing-choice-rate.png" alt="Descriptive sustainable-choice rates under gain and loss framing" style="display:block;width:100%;height:auto"><figcaption class="small">Descriptive rates for valid choice observations. Inference comes from the participant-clustered regression, not from this plot alone.</figcaption></figure>
+
+  <section class="section"><h2>Evidence files</h2><p>Open the short case brief, the public copy of the full thesis, selected original analysis-code excerpts, and aggregate model outputs.</p>
+    <p><a class="button" href="thesis-case-brief.pdf">Read the 5-page case brief</a> <a class="button" href="thesis-public.pdf">Read the full thesis</a></p>
+    <ul><li><a href="assets/analysis-code-excerpts.md">Selected original Python analysis code</a></li><li><a href="assets/Table_main_OR_CI_combined.csv">Choice model results</a></li><li><a href="assets/Table_RT_models_combined.csv">Reaction-time model results</a></li><li><a href="assets/Table_sample_overview.csv">Sample overview</a></li></ul>
+  </section>
+
+  <section class="callout"><strong>Interpretation and data limits.</strong> The study has 101 participants from an online bilingual task. Time pressure was communicated by instruction, not enforced by a countdown. Entropy is derived from observed choices and is treated as exploratory. The source notebook’s attention-check flag logic needs revalidation, so attention-based robustness claims are not used here. The submitted manuscript’s sample-size statement differs from its saved regression output; this case reports 2,107 valid choice observations and 2,197 valid reaction-time observations based on the cleaned data and saved models.</section>
+  <footer class="footer">Thesis submitted 28 February 2026. The public full-text copy omits the identifying student number and email from its cover. <a href="../index.html">Back to portfolio</a>.</footer>
+</main></body></html>

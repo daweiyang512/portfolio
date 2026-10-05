@@ -1,0 +1,38 @@
+model,term,coef,p,OR,Variables,Model (1),Model (2),Model (3),Model (4)
+H1_step6A_H1_frame_OR_CI,Intercept,-0.257829109,0.234853578,0.772727273,Loss framing,1.56,1.59,1.89,1.89
+H1_step6A_H1_frame_OR_CI,C(frame)[T.Loss],0.444064565,0.176577773,1.559031142,,(0.82 每 2.97),(0.83 每 3.03),(0.97 每 3.67),(0.97 每 3.67)
+H1_step6A_final_H1_frame_cluster_OR_CI,Intercept,-0.257829109,0.234853578,0.772727273,Time pressure,,,1.57,1.49
+H1_step6A_final_H1_frame_cluster_OR_CI,frame[T.Loss],0.444064565,0.176577773,1.559031142,,,,(0.72 每 3.45),(0.67 每 3.31)
+H1_step6B_H1_frame_plus_language_cluster_OR_CI,Intercept,0.237760173,0.387738665,1.268404958,Chinese language,,0.52**,,0.54**
+H1_step6B_H1_frame_plus_language_cluster_OR_CI,frame[T.Loss],0.462781026,0.160143197,1.588485468,,,(0.28 每 0.97),,(0.30 每 0.98)
+H1_step6B_H1_frame_plus_language_cluster_OR_CI,language[T.ZH-S],-0.65222207,0.041056376,0.520887042,Loss ℅ Pressure,,,0.67,0.7
+H3_step7A_frame_pressure_cluster_OR_CI,Intercept,-0.47855069,0.142479016,0.619680851,,,,(0.24 每 1.86),(0.25 每 1.96)
+H3_step7A_frame_pressure_cluster_OR_CI,frame[T.Loss],0.635471455,0.201747514,1.887911996,Observations,2424,2424,2424,2424
+H3_step7A_frame_pressure_cluster_OR_CI,time_pressure[T.Yes],0.453593958,0.295911578,1.573958774,,,,,
+H3_step7A_frame_pressure_cluster_OR_CI,frame[T.Loss]:time_pressure[T.Yes],-0.397467631,0.546617785,0.672019695,Variables,Model (1),Model (2),,
+H3_step7B_frame_pressure_language_cluster_OR_CI,Intercept,0.02189276,0.953492851,1.022134165,Decision conflict,汕,汕,,
+H3_step7B_frame_pressure_language_cluster_OR_CI,frame[T.Loss],0.63585997,0.202134212,1.888645622,,(SE),(SE),,
+H3_step7B_frame_pressure_language_cluster_OR_CI,time_pressure[T.Yes],0.398933605,0.365897546,1.490234671,Time pressure,汕,汕,,
+H3_step7B_frame_pressure_language_cluster_OR_CI,language[T.ZH-S],-0.623443078,0.049324793,0.536095438,,(SE),(SE),,
+H3_step7B_frame_pressure_language_cluster_OR_CI,frame[T.Loss]:time_pressure[T.Yes],-0.361011664,0.583634801,0.696970869,Conflict ℅ Pressure,,汕,,
+H4_step8_H4_OR_CI,Intercept,-0.374980265,0.355505907,0.687302843,,,(SE),,
+H4_step8_H4_OR_CI,frame[T.Loss],0.533349914,0.296712763,1.704633129,Constant,汕,汕,,
+H4_step8_H4_OR_CI,time_pressure[T.Yes],0.241404214,0.584872007,1.27303551,Observations,2424,2424,,
+H4_step8_H4_OR_CI,language[T.ZH-S],-0.092401273,0.810956485,0.91173922,,,,,
+H4_step8_H4_OR_CI,frame[T.Loss]:time_pressure[T.Yes],0.12026434,0.863495833,1.127794934,,,,,
+H4_step8_H4_OR_CI,attitude_z,1.256777456,7.52E-07,3.514078946,,,,,
+H4_step8_H4_OR_CI,frame[T.Loss]:attitude_z,-0.297567178,0.406485269,0.742622694,,,,,
+EXT_step11B_stabilityGroup_OR_CI,Intercept,-0.343109044,0.51189532,0.709560834,,,,,
+EXT_step11B_stabilityGroup_OR_CI,frame[T.Loss],1.038401512,0.110226653,2.824698157,,,,,
+EXT_step11B_stabilityGroup_OR_CI,stability_group[T.High stability],-0.057404396,0.908892385,0.944212157,,,,,
+EXT_step11B_stabilityGroup_OR_CI,time_pressure[T.Yes],0.381149259,0.27635839,1.463966099,,,,,
+EXT_step11B_stabilityGroup_OR_CI,language[T.ZH-S],-0.153439645,0.670584917,0.857752532,,,,,
+EXT_step11B_stabilityGroup_OR_CI,frame[T.Loss]:stability_group[T.High stability],-0.87504222,0.239708696,0.41684442,,,,,
+EXT_step11B_stabilityGroup_OR_CI,attitude_z,1.118666087,4.40E-10,3.06076868,,,,,
+EXT_step11_entropy_boundary_OR_CI,Intercept,-0.380986966,0.341538668,0.683186794,,,,,
+EXT_step11_entropy_boundary_OR_CI,frame[T.Loss],0.611434184,0.090808407,1.84307281,,,,,
+EXT_step11_entropy_boundary_OR_CI,time_pressure[T.Yes],0.374484248,0.272750239,1.454241194,,,,,
+EXT_step11_entropy_boundary_OR_CI,language[T.ZH-S],-0.14935856,0.690549168,0.861260246,,,,,
+EXT_step11_entropy_boundary_OR_CI,entropy_z,0.016125198,0.944592959,1.016255911,,,,,
+EXT_step11_entropy_boundary_OR_CI,frame[T.Loss]:entropy_z,-0.411578742,0.218168872,0.662603344,,,,,
+EXT_step11_entropy_boundary_OR_CI,attitude_z,1.109212178,4.83E-10,3.031968801,,,,,
