@@ -1,12 +1,13 @@
-# Dawei Yang | Course Portfolio
+# Dawei Yang | Portfolio
 
-This repository presents a master's thesis case and two separate master's-course cases. Each case has its own page and evidence.
+This repository presents a master's thesis case, two master's-course cases, and an independent residential market-analysis case. Each case has its own page and evidence.
 
 | Work | Portfolio case | Public evidence |
 | --- | --- | --- |
 | Master's Thesis · Marketing Management | Framing, time pressure, and sustainable consumption decisions | Five-page case brief, public thesis copy, selected original Python excerpts, aggregate model outputs. |
 | Data Marketing Management Lab | E-commerce churn risk | A stratified held-out evaluation, majority-class baseline, regularized logistic regression, and a visible precision/recall trade-off. |
 | Data Platform | Brand conversations and engagement | A 324-post record-link check and descriptive summaries by brand, topic, and month. |
+| Independent market analysis | Coastal villa market positioning | Regional and local listing evidence, exploratory price-structure screening, seasonal rental scenarios, and an explicit comparison-universe sensitivity note. The subject address is withheld; other comparable addresses are retained. |
 
 Open the [portfolio homepage](index.html), then choose a case. The site is static and can be read without GitHub knowledge. Code and aggregate outputs are optional technical evidence.
 

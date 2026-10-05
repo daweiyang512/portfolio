@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A privacy-safe residential market-positioning and rental-scenario analysis for a coastal villa in Baja Sardinia, Sardinia.">
+  <title>Coastal Villa Market Analysis | Dawei Yang</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="wrap">
+  <nav class="nav">
+    <a class="brand" href="../index.html">DAWEI YANG · PORTFOLIO</a>
+    <div class="navlinks">
+      <a href="#question">Question</a>
+      <a href="#method">Method</a>
+      <a href="#findings">Findings</a>
+      <a href="#evidence">Evidence files</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Independent analysis · Baja Sardinia, Sardinia</p>
+    <h2>Positioning a coastal villa in its market</h2>
+    <p class="lead">An owner-requested analysis that connects a regional listing market, a local comparison set, and a probability-weighted rental model to frame a practical hold, rent, or sell decision.</p>
+  </header>
+
+  <section class="grid" aria-label="Project snapshot">
+    <article class="card"><p class="eyebrow">Market scope</p><h3>966 canonical listings</h3><p>715 records had an asking price; 595 were in the calibrated core-market segment used for the final price-position analysis.</p></article>
+    <article class="card"><p class="eyebrow">Subject position</p><h3>€620k · lower-half core</h3><p>About the 24.5th percentile by asking price and the 37th percentile by asking price per usable sqm in the final reference distributions.</p></article>
+    <article class="card"><p class="eyebrow">Decision lens</p><h3>Market × operations</h3><p>Rental capacity is modeled by month and operating structure; a sell decision remains open without a verified alternative use of capital.</p></article>
+  </section>
+
+  <section id="question" class="section">
+    <h2>Question</h2>
+    <p>Where does the subject villa sit in the wider Costa Smeralda residential market, how does the nearby Baja Sardinia / Mucchi Bianchi market change that comparison, and what does a seasonal rental model imply after operating costs?</p>
+    <p>The work is a market-reference and decision-support case. Asking prices are not verified transaction prices, modeled rent is not realized income, and the analysis is not an independent appraisal.</p>
+  </section>
+
+  <section id="method" class="section">
+    <h2>Method</h2>
+    <div class="grid">
+      <article class="card"><h3>1 · Build the market frame</h3><p>Collect and canonicalize regional listings, separate price regimes, then use a calibrated core-market subset rather than letting luxury-tail observations define the benchmark.</p></article>
+      <article class="card"><h3>2 · Locate the asset</h3><p>Compare asking price and price per sqm with the final core-market distributions. Use an exploratory recursive screen to rank property form, location, and area; interpret the ranking as separation, not causality.</p></article>
+      <article class="card"><h3>3 · Add local and rental evidence</h3><p>Use a deduplicated local listing universe and a 12-month probability-weighted rental model. Keep observed local rent benchmarks visibly separate from modeled subject-asset rents.</p></article>
+      <article class="card"><h3>4 · Test the decision boundary</h3><p>Compare operating structures after the base fixed-cost layer and stress the income assumptions. Do not claim that holding dominates selling when alternative capital returns are unknown.</p></article>
+    </div>
+  </section>
+
+  <section id="findings" class="section">
+    <h2>Findings</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Evidence</th><th>Result</th><th>How to read it</th></tr></thead>
+        <tbody>
+          <tr><td>Core-market position</td><td>€620k · about 24.5th percentile</td><td>Lower half of the selected core distribution, not a distressed-market claim.</td></tr>
+          <tr><td>Price per usable sqm</td><td>About €4,769 · about 37th percentile</td><td>Below the core median, while still inside the observed distribution.</td></tr>
+          <tr><td>Local benchmark</td><td>Selected 63-row exact-key set · €700k median</td><td>The set includes the subject reference row. The audit reports €635k for the raw 68-row set, €700k for the selected unique-key set, €725k in an older summary, and €620k–€650k in a raw leave-one-out check. No single precise local discount is claimed.</td></tr>
+          <tr><td>Rental seasonality</td><td>Jun–Oct 71.6% · Jul–Sep 50.8% · Aug 21.4%</td><td>Probability-weighted model outputs; peak-season execution drives the annual profile.</td></tr>
+          <tr><td>Base annual cash after fixed costs</td><td>About €44.0k self-managed · €24.1k light management · €12.3k full management</td><td>Scenario outputs from the existing model, not guaranteed returns.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><strong>Decision boundary:</strong> the evidence supports a viable rent-and-hold reference case, but does not settle hold versus sell. The released capital's alternative return, sale friction, and future appreciation were not supplied as validated inputs.</div>
+  </section>
+
+  <section class="section">
+    <h2>Limits and quality controls</h2>
+    <ul>
+      <li>Market segmentation labels are analytical working categories, not official classifications.</li>
+      <li>The local conclusion depends on the selected deduplication and inclusion rules. The case keeps that sensitivity visible instead of treating one local discount as universal.</li>
+      <li>Rental figures are probability-weighted model outputs. They are not booking history or guaranteed revenue.</li>
+      <li>The structural ranking is exploratory. It does not identify causal price effects.</li>
+    </ul>
+  </section>
+
+  <section id="evidence" class="section">
+    <h2>Inspect the evidence</h2>
+    <p>The source-address reference is replaced with <strong>Subject Villa (Address Withheld)</strong>. Other comparable-market addresses are retained. The evidence workbook's seasonal summary formulas are aligned to the monthly source rows and match the archived robustness check and final presentation.</p>
+    <p><a class="button" href="evidence/Market_Reference_Report_Anonymized.pptx">Open presentation</a> <a class="button" href="evidence/Market_Evidence_Pack_Anonymized.xlsx">Open evidence workbook</a></p>
+    <p class="small">Prepared from the archived final-verified presentation and evidence pack. This public case page presents a privacy-safe reconstruction of an owner-requested project.</p>
+  </section>
+
+  <footer class="footer"><a href="../index.html">Back to portfolio</a> · Subject address withheld · Comparable listings retained.</footer>
+</main>
+</body>
+</html>
